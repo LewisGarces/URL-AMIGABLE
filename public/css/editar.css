@@ -1,0 +1,83 @@
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    background-color: #1e1e1e; /* Tarjeta de color gris oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(255, 165, 0, 0.8); /* Sombra naranja */
+}
+h2 {
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 1); /* Texto en neón naranja */
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo de los campos */
+    border: 2px solid #ffa500; /* Borde naranja */
+    color: #ffffff; /* Color de texto */
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo en foco */
+    border-color: #ffa500; /* Borde en foco */
+    box-shadow: 0 0 5px #ffa500; /* Sombra en foco */
+}
+.btn-primary {
+    background-color: transparent; /* Fondo transparente para el efecto neón */
+    border: 1px solid #ffa500; /* Borde naranja */
+    color: #ffa500; /* Texto naranja */
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative; /* Para efectos de neón */
+}
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 165, 0, 0.5);
+    z-index: -1; /* Detrás del texto */
+    filter: blur(5px); /* Efecto de neón */
+    transform: scale(1.1); /* Ampliar el fondo */
+    transition: opacity 0.3s;
+    opacity: 0; /* Iniciar invisible */
+}
+.btn-primary:hover {
+    background-color: rgba(255, 165, 0, 0.3); /* Fondo al pasar el ratón */
+    transform: scale(1.05); /* Escalar un poco */
+}
+.btn-primary:hover::before {
+    opacity: 1; /* Hacer visible el fondo al pasar el ratón */
+}
+.btn-secondary {
+    background-color: transparent; /* Fondo transparente para el efecto neón */
+    border: 1px solid #ffa500; /* Borde naranja */
+    color: #ffa500; /* Texto naranja */
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative; /* Para efectos de neón */
+}
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 165, 0, 0.5);
+    z-index: -1; /* Detrás del texto */
+    filter: blur(5px); /* Efecto de neón */
+    transform: scale(1.1); /* Ampliar el fondo */
+    transition: opacity 0.3s;
+    opacity: 0; /* Iniciar invisible */
+}
+.btn-secondary:hover {
+    background-color: rgba(255, 165, 0, 0.3); /* Fondo al pasar el ratón */
+    transform: scale(1.05); /* Escalar un poco */
+}
+.btn-secondary:hover::before {
+    opacity: 1; /* Hacer visible el fondo al pasar el ratón */
+}
